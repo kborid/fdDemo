@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fd-page-form">
     <h2>{{name}}</h2>
     <br/>
     <aty-form :data="formData" ref="form">

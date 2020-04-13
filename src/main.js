@@ -22,7 +22,7 @@ import FdGlobal from './js/app/common/fdGlobal.js';
 // ArteryUI start
 import '@com.thunisoft.artery/artery-ui/dist/styles/artery-ui.css';
 import ArteryUI from '@com.thunisoft.artery/artery-ui';
-
+import store from './store/index.js';
 // 开始时间
 const startTime = new Date().getTime();
 // 全局对象
@@ -36,6 +36,7 @@ Vue.use(ArteryUI);
 new Vue({
     el: '#app',
     router,
+    store,
     components: {App},
     template: '<App/>',
     beforeCreate() {

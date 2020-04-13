@@ -7,7 +7,7 @@
         <li @click="clickGoto('/form')">基础表单</li>
         <li @click="clickGoto('/table')">标准表格</li>
       </ul>
-      <button @click="close">关闭</button>
+      <button @click="close">{{value}}</button>
     </div>
 </template>
 
