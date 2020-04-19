@@ -54,6 +54,11 @@ export default new Router({
             path: '/table',
             name: 'pageTable',
             component: () => import('@/pages/page-table/index.vue')
+        },
+        {
+            path: '/echart',
+            name: 'pageEchart',
+            component: () => import('@/pages/page-echart/index.vue')
         }
     ]
 });

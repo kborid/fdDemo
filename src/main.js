@@ -23,6 +23,7 @@ import FdGlobal from './js/app/common/fdGlobal.js';
 import '@com.thunisoft.artery/artery-ui/dist/styles/artery-ui.css';
 import ArteryUI from '@com.thunisoft.artery/artery-ui';
 import store from './store/index.js';
+import echarts from 'echarts';
 // 开始时间
 const startTime = new Date().getTime();
 // 全局对象
@@ -32,6 +33,7 @@ window.fdGlobal.performance.start(startTime);
 window.fdGlobal.performance.execute('【app start】:');
 
 Vue.use(ArteryUI);
+Vue.prototype.$echarts = echarts;
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
